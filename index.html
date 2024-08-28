@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav> 
+        <button class="hamburger__btn">
+          <svg
+            width="18"
+            height="12"
+            viewBox="0 0 18 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H9"
+              stroke="#F3F3F3"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="logo">
+          <span>ChicMic</span>
+        </div>
+        <div class="menu__items">
+          <div class="dropdown">
+            <div class="dropdown__link">
+              <svg
+                width="26"
+                height="18"
+                viewBox="0 0 26 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1663)">
+                  <path
+                    d="M24.0969 17.4249H2.49141C1.4403 17.4249 0.588257 16.5627 0.588257 15.4991V2.50345C0.588257 1.43987 1.4403 0.577637 2.49141 0.577637H24.0969C25.1479 0.577637 26 1.43982 26 2.50345V15.4992C26 16.5627 25.148 17.4249 24.0969 17.4249Z"
+                    fill="#F5F5F5"
+                  />
+                  <path
+                    d="M26 7.67121H11.1035V0.577637H8.47469V7.67121H0.588257V10.3313H8.47469V17.4249H11.1035V10.3313H26V7.67121Z"
+                    fill="#41479B"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1663">
+                    <rect
+                      width="25.4118"
+                      height="18"
+                      fill="white"
+                      transform="translate(0.588257)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="arrow__down">
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.230192 0.209376C0.528771 -0.0777189 1.00355 -0.0684095 1.29065 0.230169L5.00002 4.16792L8.7094 0.230169C8.99649 -0.0684094 9.47128 -0.0777189 9.76986 0.209376C10.0684 0.496471 10.0777 0.971254 9.79065 1.26983L5.54065 5.76983C5.39925 5.91689 5.20404 6 5.00002 6C4.79601 6 4.6008 5.91689 4.4594 5.76983L0.209399 1.26983C-0.077696 0.971254 -0.0683866 0.496471 0.230192 0.209376Z"
+                    fill="#FFBD00"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="notifications">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.99999 0C4.68628 0 1.99999 2.68629 1.99999 6C1.99999 7.88663 1.54626 9.6651 0.742627 11.2343C0.635936 11.4426 0.632623 11.6888 0.73367 11.9C0.834717 12.1111 1.02854 12.2629 1.25771 12.3105C2.3254 12.5322 3.41184 12.7023 4.51428 12.818C4.67497 14.602 6.17423 16 8.00002 16C9.82582 16 11.3251 14.602 11.4858 12.818C12.5882 12.7023 13.6746 12.5322 14.7423 12.3105C14.9714 12.2629 15.1653 12.1111 15.2663 11.9C15.3674 11.6888 15.364 11.4426 15.2573 11.2343C14.4537 9.6651 14 7.88663 14 6C14 2.68629 11.3137 0 7.99999 0ZM6.04932 12.9433C6.6948 12.9809 7.3452 13 7.99999 13C8.6548 13 9.30523 12.9809 9.95073 12.9433C9.74906 13.8345 8.95226 14.5 8.00002 14.5C7.04779 14.5 6.25099 13.8345 6.04932 12.9433Z"
+                fill="#FFBD00"
+              />
+            </svg>
+          </div>
+          <div class="trophies">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.16616 1.62136V2.4786C3.13128 2.62665 2.10718 2.80823 1.09499 3.02223C0.701468 3.10543 0.443638 3.48425 0.510592 3.88086C1.02104 6.90456 3.54017 9.24486 6.64918 9.48047C7.43483 10.1221 8.36857 10.5907 9.3916 10.827C9.29277 11.9952 8.89653 13.0776 8.27882 14H7.5409C6.50537 14 5.6659 14.8395 5.6659 15.875V18.5H4.91579C3.67315 18.5 2.66579 19.5074 2.66579 20.75C2.66579 21.1642 3.00158 21.5 3.41579 21.5H18.4158C18.83 21.5 19.1658 21.1642 19.1658 20.75C19.1658 19.5074 18.1584 18.5 16.9158 18.5H16.1659V15.875C16.1659 14.8395 15.3264 14 14.2909 14H13.5525C12.935 13.0777 12.539 11.9953 12.4402 10.8271C13.4634 10.5908 14.3974 10.1222 15.1831 9.48047C18.2921 9.24486 20.8113 6.90456 21.3217 3.88086C21.3887 3.48425 21.1308 3.10543 20.7373 3.02223C19.7251 2.80823 18.701 2.62665 17.6662 2.4786V1.62136C17.6662 1.24303 17.3844 0.92394 17.009 0.877126C15.0127 0.628194 12.9792 0.5 10.9162 0.5C8.8531 0.5 6.81963 0.628194 4.82335 0.877126C4.44793 0.92394 4.16616 1.24303 4.16616 1.62136ZM4.16616 4.25C4.16616 5.44618 4.47764 6.56995 5.0234 7.54424C3.66628 6.9367 2.61378 5.76975 2.16005 4.33687C2.82373 4.20825 3.49254 4.09398 4.16616 3.99438V4.25ZM17.6662 4.25V3.99438C18.3398 4.09398 19.0086 4.20825 19.6723 4.33688C19.2185 5.76975 18.166 6.9367 16.8089 7.54424C17.3547 6.56995 17.6662 5.44618 17.6662 4.25Z"
+                fill="#FFBD00"
+              />
+            </svg>
+          </div>
+          <div class="money">
+            <span>100 €</span>
+            <img src="assets/images/movie-iccon.svg" alt="" />
+          </div>
+          <div class="level">
+            <span>LVL 1</span>
+          </div>
+          <div class="profile">
+            <span class="username">Martin Shein</span>
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.230192 0.209376C0.528771 -0.0777189 1.00355 -0.0684095 1.29065 0.230169L5.00002 4.16792L8.7094 0.230169C8.99649 -0.0684094 9.47128 -0.0777189 9.76986 0.209376C10.0684 0.496471 10.0777 0.971254 9.79065 1.26983L5.54065 5.76983C5.39925 5.91689 5.20404 6 5.00002 6C4.79601 6 4.6008 5.91689 4.4594 5.76983L0.209399 1.26983C-0.077696 0.971254 -0.0683866 0.496471 0.230192 0.209376Z"
+                fill="#FFBD00"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="banner__section">
+      <img src="assets/images/cubs.svg" class="cubs__img" />
+      <div class="container">
+        <div class="grid__row">
+          <div class="content">
+            <h1 class="main__title">Lorem ipsum</h1>
+            <p class="des">
+              Lorem ipsum dolor sit amet consectetur. Pretium nulla sed in elit
+              quam id molestie urna eleifend. Posuere euismod bibendum id erat
+              pretium vestibulum et. Consequat tellus donec sed aliquet
+              tristique diam ornare. Pretium nulla tristique sed dolor. Urna
+              quisque nec in tincidunt nulla.
+            </p>
+          </div>
+          <div class="full__width__img">
+            <div>
+              <img src="assets/images/banner__main.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contest__section">
+      <div class="container">
+        <div class="heading__block">
+          <h2 class="title">Contest</h2>
+          <p class="des">
+            Listed below are the most frequently asked questions by members and
+            we hope you find the answer you are looking for. However, if you
+            can't find an answer, you can always contact chat customer support
+            by clicking on the round icon at the bottom right, and we'll be
+            happy to help!
+          </p>
+        </div>
+        <div class="leaderboard__row desktop">
+          <div class="leaderboard__header">
+            <h2 class="title">Leaderboard</h2>
+            <div class="current__position__block">
+              <div class="current__position__number">
+                <img src="assets/images/illustration.svg" />
+                <span>32</span>
+              </div>
+              <p>Your current position</p>
+            </div>
+          </div>
+          <div class="leaderboard__table">
+            <div class="stats__row">
+              <div class="stats__block">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" />
+                  <span>01</span>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">USER</p>
+                  <h5 class="title">User Name</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit count</p>
+                  <h5 class="title">11</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit amount</p>
+                  <h5 class="title">2500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Prize</p>
+                  <h5 class="title">500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <img src="assets/images/buusti-logo.png" />
+              </div>
+            </div>
+            <div class="stats__row">
+              <div class="stats__block">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" />
+                  <span>02</span>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">USER</p>
+                  <h5 class="title">User Name</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit count</p>
+                  <h5 class="title">11</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit amount</p>
+                  <h5 class="title">2500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Prize</p>
+                  <h5 class="title">500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <img src="assets/images/buusti-logo.png" />
+              </div>
+            </div>
+            <div class="stats__row">
+              <div class="stats__block">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" />
+                  <span>03</span>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">USER</p>
+                  <h5 class="title">User Name</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit count</p>
+                  <h5 class="title">11</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit amount</p>
+                  <h5 class="title">2500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Prize</p>
+                  <h5 class="title">500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <img src="assets/images/buusti-logo.png" />
+              </div>
+            </div>
+            <div class="stats__row">
+              <div class="stats__block">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" />
+                  <span>03</span>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">USER</p>
+                  <h5 class="title">User Name</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit count</p>
+                  <h5 class="title">11</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit amount</p>
+                  <h5 class="title">2500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Prize</p>
+                  <h5 class="title">500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <img src="assets/images/buusti-logo.png" />
+              </div>
+            </div>
+            <div class="stats__row">
+              <div class="stats__block">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" />
+                  <span>03</span>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">USER</p>
+                  <h5 class="title">User Name</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit count</p>
+                  <h5 class="title">11</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Deposit amount</p>
+                  <h5 class="title">2500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <div class="content">
+                  <p class="label">Prize</p>
+                  <h5 class="title">500 €</h5>
+                </div>
+              </div>
+              <div class="stats__block">
+                <img src="assets/images/buusti-logo.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="leaderboard__row mobile">
+          <div class="accordion">
+            <div class="accordion__title">
+              <div class="position">
+                <img src="assets/images/illustration.svg" />
+                <span>02</span>
+              </div>
+              <p class="username">User name</p>
+              <div class="insights">
+                <img src="assets/images/buusti-logo.png" />
+                <svg
+                  width="18"
+                  height="9"
+                  viewBox="0 0 18 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                    fill="#C1C1C1"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <div class="row">
+                <p class="stats"><span>User</span> <span>User name</span></p>
+                <p class="stats"><span>Casinos</span> <span>500 € </span></p>
+                <p class="stats">
+                  <span>Deposit amount </span> <span>2500 €</span>
+                </p>
+                <p class="stats">
+                  <span>Points </span> <span> 3075 points</span>
+                </p>
+                <p class="stats"><span>Prize </span> <span> 100 €</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <div class="position">
+                <img src="assets/images/illustration.svg" />
+                <span>02</span>
+              </div>
+              <p class="username">User name</p>
+              <div class="insights">
+                <img src="assets/images/buusti-logo.png" />
+                <svg
+                  width="18"
+                  height="9"
+                  viewBox="0 0 18 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                    fill="#C1C1C1"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <div class="row">
+                <p class="stats"><span>User</span> <span>User name</span></p>
+                <p class="stats"><span>Casinos</span> <span>500 € </span></p>
+                <p class="stats">
+                  <span>Deposit amount </span> <span>2500 €</span>
+                </p>
+                <p class="stats">
+                  <span>Points </span> <span> 3075 points</span>
+                </p>
+                <p class="stats"><span>Prize </span> <span> 100 €</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <div class="position">
+                <img src="assets/images/illustration.svg" />
+                <span>02</span>
+              </div>
+              <p class="username">User name</p>
+              <div class="insights">
+                <img src="assets/images/buusti-logo.png" />
+                <svg
+                  width="18"
+                  height="9"
+                  viewBox="0 0 18 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                    fill="#C1C1C1"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <div class="row">
+                <p class="stats"><span>User</span> <span>User name</span></p>
+                <p class="stats"><span>Casinos</span> <span>500 € </span></p>
+                <p class="stats">
+                  <span>Deposit amount </span> <span>2500 €</span>
+                </p>
+                <p class="stats">
+                  <span>Points </span> <span> 3075 points</span>
+                </p>
+                <p class="stats"><span>Prize </span> <span> 100 €</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <div class="position">
+                <img src="assets/images/illustration.svg" />
+                <span>02</span>
+              </div>
+              <p class="username">User name</p>
+              <div class="insights">
+                <img src="assets/images/buusti-logo.png" />
+                <svg
+                  width="18"
+                  height="9"
+                  viewBox="0 0 18 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                    fill="#C1C1C1"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="accordion__content">
+              <div class="row">
+                <p class="stats"><span>User</span> <span>User name</span></p>
+                <p class="stats"><span>Casinos</span> <span>500 € </span></p>
+                <p class="stats">
+                  <span>Deposit amount </span> <span>2500 €</span>
+                </p>
+                <p class="stats">
+                  <span>Points </span> <span> 3075 points</span>
+                </p>
+                <p class="stats"><span>Prize </span> <span> 100 €</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="prev__winners">Previous winners</a>
+      </div>
+    </section>
+
+    <section class="lead__system__section">
+      <div class="container">
+        <div class="heading__block">
+          <h2 class="title">level system</h2>
+          <p class="des">
+            We want to be transparent about refunds, which is why we show the
+            most recent users who have received a payment. We also show members
+            whose refund application has been approved...
+          </p>
+        </div>
+        <div class="lead__system__row">
+          <div class="image">
+            <div>
+              <img src="assets/images/level-system-img.png" alt="" />
+            </div>
+          </div>
+          <div class="grid__table">
+            <div class="accordion">
+              <div class="accordion__title show">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" alt="" />
+                  <span>01</span>
+                </div>
+                <div class="insights">
+                  <p class="level__name">Level 1</p>
+                  <p class="offer">
+                    <span>20% cashback</span>
+
+                    <svg
+                      width="18"
+                      height="9"
+                      viewBox="0 0 18 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                        fill="#C1C1C1"
+                      />
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__content show">
+                <div class="grid__table__row">
+                  <div class="grid__table__head">
+                    <h4 class="sno title">S.No</h4>
+                    <h4 class="task title">Task</h4>
+                    <h4 class="progress__bar title">Progress</h4>
+                    <h4 class="reward title">Reward</h4>
+                    <h4 class="action title"></h4>
+                  </div>
+                  <div class="grid__table__body">
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/x-circle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/CheckCircle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/CheckCircle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__title">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" alt="" />
+                  <span>03</span>
+                </div>
+                <div class="insights">
+                  <p class="level__name">Level 2</p>
+                  <p class="offer">
+                    <span>25% cashback + 75 euro bonus</span>
+
+                    <svg
+                      width="18"
+                      height="9"
+                      viewBox="0 0 18 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                        fill="#C1C1C1"
+                      />
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__content">
+                <div class="grid__table__row">
+                  <div class="grid__table__head">
+                    <h4 class="sno title">S.No</h4>
+                    <h4 class="task title">Task</h4>
+                    <h4 class="progress__bar title">Progress</h4>
+                    <h4 class="reward title">Reward</h4>
+                    <h4 class="action title"></h4>
+                  </div>
+                  <div class="grid__table__body">
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/x-circle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/CheckCircle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/CheckCircle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__title">
+                <div class="position">
+                  <img src="assets/images/illustration.svg" alt="" />
+                  <span>03</span>
+                </div>
+                <div class="insights">
+                  <p class="level__name">Level 1</p>
+                  <p class="offer">
+                    <span>20% cashback</span>
+
+                    <svg
+                      width="18"
+                      height="9"
+                      viewBox="0 0 18 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.46967 0.21967C8.76256 -0.0732233 9.23744 -0.0732233 9.53033 0.21967L17.0303 7.71967C17.3232 8.01256 17.3232 8.48744 17.0303 8.78033C16.7374 9.07322 16.2626 9.07322 15.9697 8.78033L9 1.81066L2.03033 8.78033C1.73744 9.07322 1.26256 9.07322 0.96967 8.78033C0.676777 8.48744 0.676777 8.01256 0.96967 7.71967L8.46967 0.21967Z"
+                        fill="#C1C1C1"
+                      />
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__content">
+                <div class="grid__table__row">
+                  <div class="grid__table__head">
+                    <h4 class="sno title">S.No</h4>
+                    <h4 class="task title">Task</h4>
+                    <h4 class="progress__bar title">Progress</h4>
+                    <h4 class="reward title">Reward</h4>
+                    <h4 class="action title"></h4>
+                  </div>
+                  <div class="grid__table__body">
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/x-circle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/CheckCircle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="sno">1</p>
+                      <p class="task">Make10 deposits to this casino</p>
+                      <div class="progress__bar__block">
+                        <div class="progress__bar"></div>
+                        <span>3 of 10 deposits</span>
+                      </div>
+                      <p class="amount">€20</p>
+                      <div class="action__button">
+                        <button>
+                          <img src="assets/images/CheckCircle.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest__reports__section">
+      <div class="container">
+        <div class="heading__block">
+          <h2 class="title">The latest Riskfree users who got their</h2>
+          <p class="des">
+            We want to be transparent about refunds, which is why we show the
+            most recent users who have received a payment. We also show members
+            whose refund application has been approved...
+          </p>
+        </div>
+        <div class="content__row">
+          <div class="content__block">
+            <p class="des">
+              <span>Recent users,</span> whose refund application was accepted:
+            </p>
+            <div class="content__block__row">
+              <img class="logo" src="assets/images/buusti-bg-logo.png" />
+              <p class="name">Carter Torff</p>
+              <p class="price">20 €</p>
+              <p class="date">2023.09.10</p>
+              <img class="check__icon" src="assets/images/check.svg" />
+            </div>
+            <div class="content__block__row">
+              <img class="logo" src="assets/images/buusti-bg-logo.png" />
+              <p class="name">Carter Torff</p>
+              <p class="price">20 €</p>
+              <p class="date">2023.09.10</p>
+              <img class="check__icon" src="assets/images/check.svg" />
+            </div>
+            <div class="content__block__row">
+              <img class="logo" src="assets/images/buusti-bg-logo.png" />
+              <p class="name">Carter Torff</p>
+              <p class="price">20 €</p>
+              <p class="date">2023.09.10</p>
+              <img class="check__icon" src="assets/images/check.svg" />
+            </div>
+          </div>
+          <div class="content__block bg__color">
+            <p class="des">
+              <span>Recent users,</span>
+              whose money was paid:
+            </p>
+            <div class="content__block__row">
+              <img class="logo" src="assets/images/buusti-bg-logo.png" />
+              <p class="name">Carter Torff</p>
+              <p class="price">20 €</p>
+              <p class="date">2023.09.10</p>
+              <img class="check__icon" src="assets/images/check.svg" />
+            </div>
+            <div class="content__block__row">
+              <img class="logo" src="assets/images/buusti-bg-logo.png" />
+              <p class="name">Carter Torff</p>
+              <p class="price">20 €</p>
+              <p class="date">2023.09.10</p>
+              <img class="check__icon" src="assets/images/check.svg" />
+            </div>
+            <div class="content__block__row">
+              <img class="logo" src="assets/images/buusti-bg-logo.png" />
+              <p class="name">Carter Torff</p>
+              <p class="price">20 €</p>
+              <p class="date">2023.09.10</p>
+              <img class="check__icon" src="assets/images/check.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__block">
+            <img src="assets/images/footer-logo.png" alt="" />
+          </div>
+          <div class="footer__block footer__links">
+            <div class="flex__row">
+              <div class="links__container">
+                <h4 class="title">INFORMATION</h4>
+                <ul>
+                  <li><a href="">ABOUT US</a></li>
+                  <li><a href="">HOW IT WORKS</a></li>
+                  <li><a href="">ACHIEVEMENTS AND BONUS TERMS</a></li>
+                  <li><a href="">KYC - KNOW YOUR CUSTOMER</a></li>
+                  <li><a href="">VERIFICATION AND DOCUMENTS</a></li>
+                </ul>
+              </div>
+              <div class="links__container">
+                <h4 class="title">INFORMATION</h4>
+                <ul>
+                  <li><a href="">TERMS OF SERVICE</a></li>
+                  <li><a href="">COOKIES</a></li>
+                  <li><a href="">PRIVACY POLICY</a></li>
+                  <li><a href="">KYC - KNOW YOUR CUSTOMER</a></li>
+                  <li><a href="">CONTACT US</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__block">
+            <h4 class="title">NOPEAT NOSTOT TARJOAA</h4>
+            <div class="text__right zampler">
+              <img src="assets/images/zampler.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__row images__container">
+          <div class="image">
+            <img src="assets/images/coyright.svg" alt="Copyright" />
+          </div>
+          <div class="image">
+            <img src="assets/images/pelaatko.svg" alt="Copyright" />
+          </div>
+          <div class="image">
+            <img src="assets/images/gambleware.png" alt="gambleware" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
